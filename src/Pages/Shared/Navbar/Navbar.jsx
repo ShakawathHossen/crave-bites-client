@@ -10,13 +10,13 @@ const Navbar = () => {
     };
  
     return (
-        <nav className="flex items-center  uppercase md:fixed z-10 md:bg-transparent bg-gray-800 w-full max-w-screen-2xl mx-auto justify-between px-4 py-3">
+        <nav className="flex items-center  uppercase md:fixed z-10 md:bg-gray-800 opacity-70 bg-gray-800 w-full max-w-screen-2xl mx-auto justify-between px-4 py-3">
         <div className="flex items-center">
           <img src="https://i.ibb.co/5GHmd33/logoo-removebg-preview.png" alt="Logo" className=" md:h-16 h-10" />
         </div>
   
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden font-semibold">
+        <div className="md:hidden font-semibold ">
           <button
             onClick={toggleMobileMenu}
             className="text-white focus:outline-none"
