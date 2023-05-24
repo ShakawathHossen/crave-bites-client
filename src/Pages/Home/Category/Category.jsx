@@ -22,20 +22,20 @@ const Category = () => {
             >
                 <SwiperSlide> 
                     <img src="https://i.ibb.co/CMfG2qJ/slide1.jpg" alt=""/>
-                    <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Salad</p>
+                    <p className='text-3xl uppercase text-center -mt-12 text-white'>Salad</p>
                      </SwiperSlide>
                 <SwiperSlide> <img src="https://i.ibb.co/X7ZH0HM/slide3.jpg" alt="" />
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Soup</p> </SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Soup</p> </SwiperSlide>
                 <SwiperSlide> <img src="https://i.ibb.co/CMfG2qJ/slide1.jpg" alt="" />
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Pizza</p> </SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Pizza</p> </SwiperSlide>
                 <SwiperSlide> <img src="https://i.ibb.co/jJSV7yz/slide2.jpg" alt="" /> 
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Desert</p></SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Desert</p></SwiperSlide>
                 <SwiperSlide> <img src="https://i.ibb.co/X7ZH0HM/slide3.jpg" alt="" />
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Soup</p> </SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Soup</p> </SwiperSlide>
                 <SwiperSlide><img src="https://i.ibb.co/DMJkVJw/slide4.jpg" alt="" /> 
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Desert</p></SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Desert</p></SwiperSlide>
                 <SwiperSlide> <img src="https://i.ibb.co/jJSV7yz/slide2.jpg" alt="" /> 
-                <p className='text-3xl uppercase text-center -mt-12 text-white text-'>Pizza</p></SwiperSlide>
+                <p className='text-3xl uppercase text-center -mt-12 text-white text'>Pizza</p></SwiperSlide>
             </Swiper>
         </section>
     );
