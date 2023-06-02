@@ -19,7 +19,7 @@ const Menu = () => {
     const offered = menu.filter(item=> item.category === 'offered')
     return (
         
-        <div>
+        <div >
              <Helmet>
                 <meta charSet="utf-8" />
                 <title>Crave Bites-All Menu</title>

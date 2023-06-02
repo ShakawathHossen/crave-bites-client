@@ -19,7 +19,7 @@ const Home = () => {
             </Helmet>
 
             <Banner/>
-            <Category/>
+            <Category />
             <Quotes/>
             <PopularMenu/>
             <Callus/>
