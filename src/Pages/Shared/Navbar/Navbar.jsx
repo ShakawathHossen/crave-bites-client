@@ -3,14 +3,65 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    const toggleMobileMenu = () => {
-      setIsMobileMenuOpen(!isMobileMenuOpen);
-    };
- 
-    return (
-      <nav className="flex items-center justify-between px-4 py-3 md:bg-gray-900 md:opacity-70 md:fixed md:z-10 w-full bg-gray-900">
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+
+  const navOptions = <>
+
+    <li>
+      <Link to="/" className="text-white hover:text-gray-300">
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="/about" className="text-white hover:text-gray-300">
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/dashboard" className="text-white hover:text-gray-300">
+        Dashboard
+      </Link>
+    </li>
+    <li>
+      <Link to="/contact" className="text-white hover:text-gray-300">
+        Contact Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/menu" className="text-white hover:text-gray-300">
+        Our Menu
+      </Link>
+    </li>
+    <li>
+      <Link to="/shop" className="text-white hover:text-gray-300">
+        Our Shop
+      </Link>
+    </li>
+    <li>
+      <Link to="/signin" className="text-white hover:text-gray-300">
+        Sign In
+      </Link>
+    </li>
+    <li>
+      <Link to="/profile" className="text-white hover:text-gray-300">
+        <img
+          src="/path/to/profile-picture.jpg"
+          alt="Profile"
+          className="w-8 h-8 rounded-full"
+        />
+      </Link>
+    </li>
+  </>
+
+
+
+  return (
+    <nav className="flex items-center justify-between px-4 py-3 md:bg-gray-900 md:opacity-70 md:fixed md:z-10 w-full bg-gray-900">
       {/* Logo */}
       <div className="flex items-center">
         <img src="/path/to/logo.png" alt="Logo" className="w-8 h-8" />
@@ -48,50 +99,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="hidden md:flex md:items-center">
         <ul className="flex items-center space-x-4">
-          <li>
-            <a href="/" className="text-white hover:text-gray-300">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/about" className="text-white hover:text-gray-300">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="/dashboard" className="text-white hover:text-gray-300">
-              Dashboard
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="text-white hover:text-gray-300">
-              Contact Us
-            </a>
-          </li>
-          <li>
-            <a href="/menu" className="text-white hover:text-gray-300">
-              Our Menu
-            </a>
-          </li>
-          <li>
-            <a href="/shop" className="text-white hover:text-gray-300">
-              Our Shop
-            </a>
-          </li>
-          <li>
-            <a href="/signin" className="text-white hover:text-gray-300">
-              Sign In
-            </a>
-          </li>
-          <li>
-            <a href="/profile" className="text-white hover:text-gray-300">
-              <img
-                src="/path/to/profile-picture.jpg"
-                alt="Profile"
-                className="w-8 h-8 rounded-full"
-              />
-            </a>
-          </li>
+         {navOptions}
         </ul>
       </div>
 
@@ -99,57 +107,13 @@ const Navbar = () => {
       {isMobileMenuOpen && (
         <div className="mt-4 md:hidden absolute z-20 right-0 top-10 w-1/2">
           <ul className="bg-gray-900 py-2 px-4 space-y-2">
-            <li>
-              <a href="/" className="text-white block">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="/about" className="text-white block">
-                About Us
-              </a>
-            </li>
-            <li>
-              <a href="/dashboard" className="text-white block">
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-white block">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a href="/menu" className="text-white block">
-                Our Menu
-              </a>
-            </li>
-            <li>
-              <a href="/shop" className="text-white block">
-                Our Shop
-              </a>
-            </li>
-            <li>
-              <a href="/signin" className="text-white block">
-                Sign In
-              </a>
-            </li>
-            <li>
-              <a href="/profile" className="text-white block">
-                <img
-                  src="/path/to/profile-picture.jpg"
-                  alt="Profile"
-                  className="w-8 h-8 rounded-full inline-block"
-                />
-                <span className="ml-2">Profile</span>
-              </a>
-            </li>
+          {navOptions}
           </ul>
         </div>
       )}
     </nav>
-        
-    );
+
+  );
 };
 
 export default Navbar;
