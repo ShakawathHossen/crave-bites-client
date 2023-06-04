@@ -28,9 +28,9 @@ const Menu = () => {
             <SectonTitle heading="TODAY'S OFFER" subHeading="Don't miss" />
 
             <MenuCategory items={offered}></MenuCategory>
-            <MenuCategory items={dessert} title='Dessert' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={dessertImg}></MenuCategory>
-            <MenuCategory items={pizza} title='soup' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={pizzatImg}></MenuCategory>
-            <MenuCategory items={salad} title='soup' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={saladtImg}></MenuCategory>
+            <MenuCategory items={dessert} title='dessert' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={dessertImg}></MenuCategory>
+            <MenuCategory items={pizza} title='pizza' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={pizzatImg}></MenuCategory>
+            <MenuCategory items={salad} title='salad' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={saladtImg}></MenuCategory>
             <MenuCategory items={soup} title='soup' subTitle='Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, rerum!' img={souptImg}></MenuCategory>
         </div>
     );
